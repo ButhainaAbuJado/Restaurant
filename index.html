@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body{
+            background: #D8D8D8;
+            font-size: 20px;
+            color: #408E91;
+            align-items: center;
+        }
+     
+      
+      header{
+          
+          background-color: #E49393;
+          color: #408E91;
+      }
+
+     footer {
+          
+          background-color: #E49393;
+          color: #408E91;
+      }
+    
+        a:link, a:visited {
+      text-decoration: none ;
+      color:#408E91;
+        }
+         
+        #type{
+             background-color: #408E91;
+             color: #E49393;
+        }
+
+        #type:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+            }
+            button{
+                background-color: #408E91; 
+                border: none;
+                color: #E49393;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+            }
+            legend{
+                color: #E49393;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            table{
+                
+                margin-left: auto; 
+                margin-right: auto;
+            }
+             h4{
+                text-align: center;
+            }
+            table, th, td {
+  border: 1px solid;
+}
+        </style>
+</head>
+<body>
+   <Header>
+    <span><a href="./index.html">  Home Page  </a> </span>
+    <span   style=" font-family: 'Sigmar One', cursive; font-size: xx-large;">   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Food Form  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   </span>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbSUd92VThTgZZVmPkdEv3MApqi9yLCQioDjwbyhQXFv0Xhlg8PRYRRQmdP_4ea9x5pM&usqp=CAU" width="30px" ; height="30px"; 
+    alt="logo" />
+    </Header>
+
+    <br>    <br>
+
+    <main>
+        <section>
+            <form id="FoodForm">
+                <fieldset>
+                    <legend>Restaurant</legend>
+                    <div>
+                        <label for="name">Food Name</label>
+                        <input type="text" name="name" id="name" placeholder="Food Name">
+                    </div>
+                    <br>
+                    <div>
+                        <select name="type" id="type">
+                            <option value="Fruit and vegetables">Fruit and vegetables</option>
+                            <option value="Starchy food">Starchy food</option>
+                            <option value="dairy">Dairy</option>
+                            <option value="protein">Protein</option>
+                            <option value="fat">Fat</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" placeholder="Price">
+                    </div>
+                    <br>
+                    <button type="submit">save</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="foodTable">
+            <div>
+                
+                 <table id="tableData" cellpadding="2">
+                 <h4><b>Food Table </b></h4> 
+                 <tr>
+                    <td><b>Id</b></td>
+                   <td><b>Name</b></td>
+                   <td><b>Type</b></td>
+                   <td><b>Price</b></td>
+                  </tr>
+                 </table>
+               </div>
+        </section>
+    </main>
+
+    <footer>
+       
+        
+            <h3>Contact me :</h3>
+            <h3>phone : 0782547864</h3>
+                    <p> <a href="https://www.facebook.com/buthaina.sufian?mibextid=ZbWKwL "> Facebook </a></p>
+                    
+                    
+                    <p>&copy; Buthaina Abu Jado . All Rights Reserved.</p>
+  
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
