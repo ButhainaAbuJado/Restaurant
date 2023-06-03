@@ -6,12 +6,7 @@ let objectAr =[];
     objectAr =JSON.parse(jsonArray);
     if (objectAr == null){
         console.log("the array is empty");
-    } //else {
-    //     for (let i =0 ; i< obj.length;i++){
-    //         let food = new resForm(obj[i].foodName , obj[i].foodType , obj[i].price);
-    //         food.foodId=obj[i].generatingID();
-    //     };//for  
-    //  } //elas
+    } 
      
      console.log(objectAr);
   }
@@ -51,7 +46,7 @@ function renderData() {
    Name.style.display= "flex";
    Type.style.display= "flex";
    Price.style.display= "flex";
-   }//for
+   }
 
 
   }
