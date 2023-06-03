@@ -5,8 +5,14 @@ let objectAr =[];
     let jsonArray =window.localStorage.getItem("Food")
     objectAr =JSON.parse(jsonArray);
     if (objectAr == null){
-        console.log(" array is empty");
-    } 
+        console.log("the array is empty");
+    } //else {
+    //     for (let i =0 ; i< obj.length;i++){
+    //         let food = new resForm(obj[i].foodName , obj[i].foodType , obj[i].price);
+    //         food.foodId=obj[i].generatingID();
+    //     };//for  
+    //  } //elas
+     
      console.log(objectAr);
   }
 
