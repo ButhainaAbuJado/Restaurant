@@ -1,7 +1,7 @@
 'use strict';
 let foodCid=1;
 let allfood=[];
-function resForm(name, type, price){
+function FoodForm(name, type, price){
     this.foodId=0;
     this.foodName = name;
     this.foodType= type;
@@ -10,13 +10,13 @@ function resForm(name, type, price){
    allfood.push(this);
 };
 
-resForm.prototype.generatingID = function(){
+FoodForm.prototype.generatingID = function(){
  this.foodId=foodCid;
         foodCid=foodCid+1;
         return(this.foodId);
 }
 
-let saveValues = document.getElementById('resForm');
+let saveValues = document.getElementById('FoodForm');
   saveValues.addEventListener('submit', handler);
 
     function handler(e){
@@ -24,7 +24,7 @@ let saveValues = document.getElementById('resForm');
     let Name =  e.target.name.value;
     let Type =  e.target.type.value;
     let price = e.target.price.value;
-    let food = new resForm(Name, Type, price);
+    let food = new FoodForm(Name, Type, price);
       food.generatingID();
   storeData();
   }
