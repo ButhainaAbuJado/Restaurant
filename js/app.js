@@ -16,7 +16,7 @@ resForm.prototype.generatingID = function(){
         return(this.foodId);
 }
 
-let saveValues = document.getElementById('FoodForm');
+let saveValues = document.getElementById('resForm');
   saveValues.addEventListener('submit', handler);
 
     function handler(e){
