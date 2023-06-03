@@ -7,33 +7,31 @@
     <title>Restaurant</title>
     <style>
         body{
-            background: #D8D8D8;
+            background: #F6FA70;
             font-size: 20px;
-            color: #408E91;
+            color: #FF0060;
             align-items: center;
         }
-     
-      
-      header{
-          
-          background-color: #E49393;
-          color: #408E91;
-      }
+        header {
 
-     footer {
-          
-          background-color: #E49393;
-          color: #408E91;
-      }
+background-color: #00DFA2;
+}
+        footer{
+            padding: 20px;
+            text-align: center;
+            background: #00DFA2;
+            font-size: 10px;
+            margin-top: 200px;
+        }
     
         a:link, a:visited {
       text-decoration: none ;
-      color:#408E91;
+      color: #0079FF;
         }
          
         #type{
-             background-color: #408E91;
-             color: #E49393;
+             background-color: #00DFA2;
+             color: #FF0060;
         }
 
         #type:after {
@@ -47,9 +45,9 @@
             border-color: #fff transparent transparent transparent;
             }
             button{
-                background-color: #408E91; 
+                background-color: #00DFA2; 
                 border: none;
-                color: #E49393;
+                color: #FF0060;
                 padding: 10px 25px;
                 text-align: center;
                 text-decoration: none;
@@ -57,7 +55,7 @@
                 font-size: 20px;
             }
             legend{
-                color: #E49393;
+                color: #FF0060;
                 font-weight: bold;
                 font-size: 25px;
             }
@@ -76,18 +74,23 @@
         </style>
 </head>
 <body>
-   <Header>
-    <span><a href="./index.html">  Home Page  </a> </span>
-    <span   style=" font-family: 'Sigmar One', cursive; font-size: xx-large;">   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Food Form  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   </span>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbSUd92VThTgZZVmPkdEv3MApqi9yLCQioDjwbyhQXFv0Xhlg8PRYRRQmdP_4ea9x5pM&usqp=CAU" width="30px" ; height="30px"; 
-    alt="logo" />
-    </Header>
+ 
+        <Header>
 
-    <br>    <br>
+            <span><a href="./index.html "> Home Page </a> </span>
+            <span><a href="./statistics.html "> Statistics Page </a> </span>
+            <span style=" font-family: 'Sigmar One', cursive; font-size: xx-large;">  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Food Form &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbSUd92VThTgZZVmPkdEv3MApqi9yLCQioDjwbyhQXFv0Xhlg8PRYRRQmdP_4ea9x5pM&usqp=CAU" width="30px" ; height="30px"
+                width="30px" ; height="30px" ; alt="logo" />
+        </Header>
+
 
     <main>
         <section>
-            <form id="FoodForm">
+            <form id="FoodForm" action="statistics.html">
                 <fieldset>
                     <legend>Restaurant</legend>
                     <div>
@@ -107,40 +110,26 @@
                     <br>
                     <div>
                         <label for="price">Price</label>
-                        <input type="number" name="price" id="price" placeholder="Price">
+                        <input type="text" name="price" id="price" placeholder="Price">
                     </div>
                     <br>
-                    <button type="submit">save</button>
+                    <button type="submit" >save</button>
                 </fieldset>
             </form>
-        </section>
-        <section id="foodTable">
-            <div>
-                
-                 <table id="tableData" cellpadding="2">
-                 <h4><b>Food Table </b></h4> 
-                 <tr>
-                    <td><b>Id</b></td>
-                   <td><b>Name</b></td>
-                   <td><b>Type</b></td>
-                   <td><b>Price</b></td>
-                  </tr>
-                 </table>
-               </div>
         </section>
     </main>
 
     <footer>
        
         
-            <h3>Contact me :</h3>
-            <h3>phone : 0782547864</h3>
-                    <p> <a href="https://www.facebook.com/buthaina.sufian?mibextid=ZbWKwL "> Facebook </a></p>
-                    
-                    
-                    <p>&copy; Buthaina Abu Jado . All Rights Reserved.</p>
-  
-    </footer>
-    <script src="./app.js"></script>
+        <h3>Contact me :</h3>
+        <h3>phone : 0782547864</h3>
+                <p> <a href="https://www.facebook.com/buthaina.sufian?mibextid=ZbWKwL "> Facebook </a></p>
+                
+                
+                <p>&copy; Buthaina Abu Jado . All Rights Reserved.</p>
+
+</footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
