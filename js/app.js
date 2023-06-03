@@ -10,13 +10,13 @@ function FoodForm(name, type, price){
    allfood.push(this);
 };
 
-Foodform.prototype.generatingID = function(){
+FoodForm.prototype.generatingID = function(){
  this.foodId=foodCid;
         foodCid=foodCid+1;
         return(this.foodId);
 }
 
-let saveValues = document.getElementById('resForm');
+let saveValues = document.getElementById('FoodForm');
   saveValues.addEventListener('submit', handler);
 
     function handler(e){
