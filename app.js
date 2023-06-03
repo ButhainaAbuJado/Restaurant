@@ -33,7 +33,7 @@ FoodForm.prototype.render = function () {
     let Name =  e.target.name.value;
     let Type =  e.target.type.value;
     let price = e.target.price.value;
-    let food = new resForm(Name, Type, price);
+    let food = new FoodForm(Name, Type, price);
     food.render();
     console.log(food);
   }
