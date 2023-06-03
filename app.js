@@ -14,7 +14,7 @@ function FoodForm(name, type, price){
    allfood.push(this);
 };
 
-resForm.prototype.render = function () {
+FoodForm.prototype.render = function () {
     var id = this.generatingID();
     var name = this.foodName;
     var type = this.foodType;
@@ -22,7 +22,7 @@ resForm.prototype.render = function () {
     var table = document.getElementById("tableData");
     var rowCount = table.rows.length;
     var row = table.insertRow(rowCount);
-     row.insertCell(0).innerHTML=id;
+    row.insertCell(0).innerHTML=id;
     row.insertCell(1).innerHTML= name;
     row.insertCell(2).innerHTML= type;
     row.insertCell(3).innerHTML= price;
